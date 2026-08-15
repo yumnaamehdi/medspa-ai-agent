@@ -14,6 +14,8 @@ from rag.retrieval import retrieve
 
 # Load environment variables
 load_dotenv()
+print("RENDER:", os.getenv("RENDER"))
+print("OPENAI_API_KEY loaded:", bool(os.getenv("OPENAI_API_KEY")))
 
 app = FastAPI()
 app.add_middleware(
