@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Lip Filler",
+    "category": "Dermal Filler",
+    "description": "Adds volume, shape, and definition to the lips and may help improve mild asymmetry."
+  },
+  {
+    "name": "Chin Filler",
+    "category": "Dermal Filler",
+    "description": "Adds projection and contour to the chin to improve facial balance."
+  },
+  {
+    "name": "Jawline Filler",
+    "category": "Dermal Filler",
+    "description": "Enhances jawline definition and contour."
+  },
+  {
+    "name": "Botox",
+    "category": "Neuromodulator",
+    "description": "Temporarily relaxes targeted muscles to soften the appearance of dynamic facial lines."
+  },
+  {
+    "name": "RF Microneedling",
+    "category": "Skin Treatment",
+    "description": "Combines microneedling with radiofrequency energy to support collagen remodeling and improve skin texture."
+  }
+]

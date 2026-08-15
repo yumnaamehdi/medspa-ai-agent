@@ -1,0 +1,17 @@
+{
+  "consultation": {
+    "virtual": 25,
+    "in_person": 100
+  },
+  "deposit": {
+    "amount": 100,
+    "description": "A $100 deposit is required for in-person appointments and is applied toward treatment."
+  },
+  "cancellation": {
+    "notice_hours": 24,
+    "description": "Appointments require at least 24 hours notice for cancellation."
+  },
+  "card_fee": {
+    "percent": 3
+  }
+}

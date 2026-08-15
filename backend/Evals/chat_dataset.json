@@ -1,0 +1,47 @@
+[
+  {
+    "query": "How much are lips?",
+    "expected_contains": ["499"],
+    "expected_empty_sources": false
+  },
+  {
+    "query": "How much is half a syringe of lip filler?",
+    "expected_contains": ["299"],
+    "expected_empty_sources": false
+  },
+  {
+    "query": "How much is Botox?",
+    "expected_contains": ["11"],
+    "expected_empty_sources": false
+  },
+  {
+    "query": "What does chin filler do?",
+    "expected_contains": ["chin"],
+    "expected_empty_sources": false
+  },
+  {
+    "query": "What treatment helps define my jawline?",
+    "expected_contains": ["jawline"],
+    "expected_empty_sources": false
+  },
+  {
+    "query": "What happens if I cancel my appointment?",
+    "expected_contains": ["24"],
+    "expected_empty_sources": false
+  },
+  {
+    "query": "Do I need a deposit?",
+    "expected_contains": ["100"],
+    "expected_empty_sources": false
+  },
+  {
+    "query": "How much is Sculptra?",
+    "expected_contains": ["don't have information"],
+    "expected_empty_sources": true
+  },
+  {
+    "query": "Do you offer laser hair removal?",
+    "expected_contains": ["don't have information"],
+    "expected_empty_sources": true
+  }
+]

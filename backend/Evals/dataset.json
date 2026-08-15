@@ -1,0 +1,57 @@
+[
+  {
+    "query": "How much are lips?",
+    "expected_title": "Lip Filler",
+    "expected_type": "pricing"
+  },
+  {
+    "query": "How much is half a syringe of lip filler?",
+    "expected_title": "Half Syringe Lip Filler",
+    "expected_type": "pricing"
+  },
+  {
+    "query": "What treatment helps define my jawline?",
+    "expected_title": "Jawline Filler",
+    "expected_type": "service"
+  },
+  {
+    "query": "How much is jawline filler?",
+    "expected_title": "Jawline Filler",
+    "expected_type": "pricing"
+  },
+  {
+    "query": "What does chin filler do?",
+    "expected_title": "Chin Filler",
+    "expected_type": "service"
+  },
+  {
+    "query": "How much is Botox?",
+    "expected_title": "Botox",
+    "expected_type": "pricing"
+  },
+  {
+    "query": "What does RF microneedling do?",
+    "expected_title": "RF Microneedling",
+    "expected_type": "service"
+  },
+{
+  "query": "What happens if I cancel my appointment?",
+  "expected_title": "Cancellation",
+  "expected_type": "policy"
+},
+{
+  "query": "Do I need a deposit?",
+  "expected_title": "Deposit",
+  "expected_type": "policy"
+},
+  {
+    "query": "How much is Sculptra?",
+    "expected_title": null,
+    "expected_type": null
+  },
+  {
+    "query": "Do you offer laser hair removal?",
+    "expected_title": null,
+    "expected_type": null
+  }
+]

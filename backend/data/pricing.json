@@ -1,0 +1,26 @@
+{
+  "Lip Filler": {
+    "price": 499,
+    "unit": "1 mL"
+  },
+  "Half Syringe Lip Filler": {
+    "price": 299,
+    "unit": "0.5 mL"
+  },
+  "Chin Filler": {
+    "price": 499,
+    "unit": "1 syringe"
+  },
+  "Jawline Filler": {
+    "price": 499,
+    "unit": "1 syringe"
+  },
+  "Botox": {
+    "price": 11,
+    "unit": "per unit"
+  },
+  "RF Microneedling": {
+    "price": 399,
+    "unit": "per session"
+  }
+}
