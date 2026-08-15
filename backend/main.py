@@ -26,11 +26,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-client = OpenAI(
-    api_key=os.getenv("OPENAI_API_KEY")
-)
+def get_openai_client():
+    api_key = os.getenv("OPENAI_API_KEY")
 
+    if not api_key:
+        raise RuntimeError("OPENAI_API_KEY is not configured")
 
+    return OpenAI(api_key=api_key)
 # -------------------------
 # LOAD KNOWN SERVICES
 # -------------------------
@@ -178,7 +180,7 @@ CUSTOMER QUESTION:
     # -------------------------
     # GENERATE AI RESPONSE
     # -------------------------
-
+    client = get_openai_client()
     response = client.responses.create(
         model="gpt-5-mini",
         instructions=SYSTEM_PROMPT,
@@ -199,4 +201,11 @@ CUSTOMER QUESTION:
             }
             for result in results
         ]
+    }
+@app.get("/health")
+def health():
+    return {
+        "status": "ok",
+        "render": os.getenv("RENDER") == "true",
+        "openai_key_configured": bool(os.getenv("OPENAI_API_KEY"))
     }

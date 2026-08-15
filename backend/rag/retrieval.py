@@ -8,9 +8,13 @@ from openai import OpenAI
 
 load_dotenv()
 
-client = OpenAI(
-    api_key=os.getenv("OPENAI_API_KEY")
-)
+def get_openai_client():
+    api_key = os.getenv("OPENAI_API_KEY")
+
+    if not api_key:
+        raise RuntimeError("OPENAI_API_KEY is not configured")
+
+    return OpenAI(api_key=api_key)
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 EMBEDDINGS_FILE = BASE_DIR / "rag" / "embeddings.json"
@@ -22,13 +26,14 @@ def load_documents():
 
 
 def create_embedding(text):
+    client = get_openai_client()
+
     response = client.embeddings.create(
         model="text-embedding-3-small",
         input=text
     )
 
     return response.data[0].embedding
-
 
 def cosine_similarity(vector_a, vector_b):
     a = np.array(vector_a)
