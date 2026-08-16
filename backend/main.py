@@ -20,12 +20,15 @@ print("OPENAI_API_KEY loaded:", bool(os.getenv("OPENAI_API_KEY")))
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=[
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+        "https://medspa-ai-agent.vercel.app",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 def get_openai_client():
     api_key = os.getenv("OPENAI_API_KEY")
 
